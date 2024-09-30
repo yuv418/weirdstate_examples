@@ -4,7 +4,7 @@
 #include <errno.h>
 #include <string.h>
 
-#define USERNAME "jane"
+#define USERNAME "janedoe"
 
 //sizeof 16
 struct login {
@@ -30,7 +30,7 @@ struct login* compute_cookie(uint64_t user_cookie) {
 
   struct login* login_s = malloc(sizeof(struct login));
 
-  strcpy(login_s->username, "jane");
+  strcpy(login_s->username, "janedoe");
 
   *cookie = user_cookie;
   login_s->authenticated = sum(cookie);
