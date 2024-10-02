@@ -4,9 +4,6 @@
 #include <errno.h>
 #include <string.h>
 
-#define USERNAME "janedoe"
-
-//sizeof 16
 struct login {
   char username[8]; 
   uint64_t authenticated; 
