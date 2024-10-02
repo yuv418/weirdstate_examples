@@ -41,6 +41,7 @@ int main(int argc, char** argv) {
   if (errno == ERANGE) { return 1; }
 
   struct login* login_s = compute_cookie(user_cookie);
-  printf("USER: %s, login granted %d.\n", login_s->username, login_s->authenticated != 0);
+  printf("USER: %s, login granted %d.\n", 
+          login_s->username, login_s->authenticated != 0);
 
 }
